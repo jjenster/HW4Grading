@@ -16,9 +16,11 @@ public class GradeKBest {
 
 		// Test case 1: no elements
 		if (!student.kbest().equals(gold.kbest())) {
-			writer.append("Empty kbest(): 0");
+			writer.append("Empty kbest():0");
+			writer.append("\n");
 		} else{
-			writer.append("Empty kbest(): 2");
+			writer.append("Empty kbest():2");
+			writer.append("\n");
 		}
 
 		// Test case 2: inserting 5 elements
@@ -34,9 +36,11 @@ public class GradeKBest {
 		gold.count(8);
 		
 		if (!student.kbest().equals(gold.kbest())) {
-			writer.append("x < k kbest(): 0");
+			writer.append("x < k kbest():0");
+			writer.append("\n");
 		} else{
-			writer.append("Empty kbest(): 3");
+			writer.append("Empty kbest():3");
+			writer.append("\n");
 		}
 		
 		// Test case 3: inserting more than 7 elements
@@ -56,9 +60,11 @@ public class GradeKBest {
 		}
 		
 		if (!student.kbest().equals(gold.kbest())) {
-			writer.append("x > k kbest(): 0");
+			writer.append("x > k kbest():0");
+			writer.append("\n");
 		} else{
-			writer.append("Empty kbest(): 5");
+			writer.append("Empty kbest():5");
+			writer.append("\n");
 		}
 		
 		// Test case 4: inserting more elements
@@ -74,9 +80,11 @@ public class GradeKBest {
 		}
 		
 		if (!student.kbest().equals(gold.kbest())) {
-			writer.append("x > k kbest(): 0");
+			writer.append("x > k kbest():0");
+			writer.append("\n");
 		} else{
-			writer.append("Empty kbest(): 5");
+			writer.append("Empty kbest():3");
+			writer.append("\n");
 		}
 		
 		writer.close();
