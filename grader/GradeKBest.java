@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 
-public class TestKBest {
+public class GradeKBest {
 
 	public static void main(String[] args) throws IOException {
 
@@ -11,7 +11,7 @@ public class TestKBest {
 
 		int k = 7;
 
-		KBestCounterG<Integer> gold = new KBestCounterG<>(k);
+		KBestCounterGold<Integer> gold = new KBestCounterGold<>(k);
 		KBestCounter<Integer> student = new KBestCounter<>(k);
 
 		// Test case 1: no elements
