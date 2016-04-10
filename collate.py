@@ -28,5 +28,5 @@ for uni, grade_file in zip(unis, grade_files):
 with open('grades-all.csv', 'w') as csv_file:
   writer = csv.DictWriter(csv_file, fieldnames=['uni', 'grades', 'comments'])
   writer.writeheader()
-  for value in data.values():
+  for value in sorted(data.values(), key=lambda k: k['uni']):
     writer.writerow(value)
