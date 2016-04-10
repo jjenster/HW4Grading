@@ -16,10 +16,10 @@ public class GradeKBest {
 
 		// Test case 1: no elements
 		if (!student.kbest().equals(gold.kbest())) {
-			writer.append("Empty kbest():0");
+			writer.append("empty kbest() returns either empty list or null:0");
 			writer.append("\n");
 		} else{
-			writer.append("Empty kbest():2");
+			writer.append("empty kbest() returns either empty list or null:2");
 			writer.append("\n");
 		}
 
@@ -36,10 +36,10 @@ public class GradeKBest {
 		gold.count(8);
 		
 		if (!student.kbest().equals(gold.kbest())) {
-			writer.append("x < k kbest():0");
+			writer.append("kbest() returns x elements when x elements are inserts for x < k:0");
 			writer.append("\n");
 		} else{
-			writer.append("Empty kbest():3");
+			writer.append("kbest() returns x elements when x elements are inserts for x < k:3");
 			writer.append("\n");
 		}
 		
@@ -60,10 +60,10 @@ public class GradeKBest {
 		}
 		
 		if (!student.kbest().equals(gold.kbest())) {
-			writer.append("x > k kbest():0");
+			writer.append("kbest() returns top k elements when x > k elements are inserted:0");
 			writer.append("\n");
 		} else{
-			writer.append("Empty kbest():5");
+			writer.append("kbest() returns top k elements when x > k elements are inserted:5");
 			writer.append("\n");
 		}
 		
@@ -80,10 +80,10 @@ public class GradeKBest {
 		}
 		
 		if (!student.kbest().equals(gold.kbest())) {
-			writer.append("x > k kbest():0");
+			writer.append("kbest() returns new list of k elements (some of which are from the previous insert) when y more elements are inserted:0");
 			writer.append("\n");
 		} else{
-			writer.append("Empty kbest():3");
+			writer.append("kbest() returns new list of k elements (some of which are from the previous insert) when y more elements are inserted:3");
 			writer.append("\n");
 		}
 		

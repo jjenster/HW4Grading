@@ -1,0 +1,4 @@
+empty kbest() returns either empty list or null:2
+kbest() returns x elements when x elements are inserts for x < k:3
+kbest() returns top k elements when x > k elements are inserted:5
+kbest() returns new list of k elements (some of which are from the previous insert) when y more elements are inserted:3
